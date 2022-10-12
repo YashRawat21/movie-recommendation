@@ -7,19 +7,22 @@ var movieList = {
     {
     Name: "War",
     image:"/images/War-01.jpg",
-    youTube:"https://youtu.be/tQ0mzXRk-oM"
+    youTube:"https://youtu.be/tQ0mzXRk-oM",
+    rating: "4/5"
     },
 
     {
       Name: "Don2",
       image:"/images/don2.jpg",
-      youTube:"https://youtu.be/_X5w-6PqoZ0"
+      youTube:"https://youtu.be/_X5w-6PqoZ0",
+      rating: "3/5"
     },
 
     {
       Name: "shershaah",
       image:"/images/shershaah.jpg",
-      youTube:"https://youtu.be/Q0FTXnefVBA"
+      youTube:"https://youtu.be/Q0FTXnefVBA",
+      rating: "5/5"
     }
   ],
 
@@ -27,17 +30,21 @@ var movieList = {
     {
     Name: "Dhamaal",
     image:"/images/dhamaal.jpg",
-    youTube:"https://youtu.be/LZX2NAR_QlY"
+    youTube:"https://youtu.be/LZX2NAR_QlY",
+    rating: "4/5"
     },
     {
       Name: "Golmaal",
       image:"/images/golmaal.jpg",
-      youTube:"https://youtu.be/3fO1f9TndAM"
+      youTube:"https://youtu.be/3fO1f9TndAM",
+      rating: "3/5"
+      
     },
     {
       Name: "Bhool Bhulaiyaa 2",
       image:"/images/bhool-bhualiyaa.jpg",
-      youTube:"https://youtu.be/P2KRKxAb2ek"
+      youTube:"https://youtu.be/P2KRKxAb2ek",
+      rating: "2/5"
     }
     
   ],
@@ -45,17 +52,20 @@ var movieList = {
     {
     Name: "Student Of The Year",
     image:"/images/soty.jpg",
-    youTube:"https://youtu.be/fivOhPjX9YM"
+    youTube:"https://youtu.be/fivOhPjX9YM",
+    rating: "3/5"
     },
     {
       Name: "Yeh Jawaani Hai Deewani",
       image:"/images/yjhd.jpg",
-      youTube:"https://youtu.be/Rbp2XUSeUNE"
+      youTube:"https://youtu.be/Rbp2XUSeUNE",
+      rating: "4/5"
     },
     {
       Name: "Tadap",
       image:"/images/Tadap.jpg",
-      youTube:"https://youtu.be/mOBqu1z5mn8"
+      youTube:"https://youtu.be/mOBqu1z5mn8",
+      rating: "2/5"
     }
     
   ],
@@ -63,17 +73,20 @@ var movieList = {
     {
     Name: "Drishyam",
     image:"/images/drishyam.jpg",
-    youTube:"https://youtu.be/AuuX2j14NBg"
+    youTube:"https://youtu.be/AuuX2j14NBg",
+    rating: "5/5"
     },
     {
       Name: "NH 10",
       image:"/images/nh-10.jpg",
-      youTube:"https://youtu.be/A9icNqWlylw"
+      youTube:"https://youtu.be/A9icNqWlylw",
+      rating: "4/5"
     },
     {
       Name: "Talvar",
       image:"/images/talvar.webp",
-      youTube:"https://youtu.be/aQNMsw8Ljjc"
+      youTube:"https://youtu.be/aQNMsw8Ljjc",
+      rating: "3/5"
     }
   ]
 }
@@ -102,6 +115,7 @@ function App() {
               <a className='movie-info' href={movie.youTube} alt={movie.Name} key={movie.number} target="_blank">
                 <img src={movie.image} alt={movie.Name} className='movie-image' />
                 <span className='movie.Name'>{movie.Name}</span>
+                <span className='movie.rating'>{movie.rating}</span>
               </a>
             )}
 
